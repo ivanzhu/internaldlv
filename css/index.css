@@ -1,0 +1,45 @@
+/* 
+    Document   : index
+    Created on : 2012-11-1, 11:53:23
+    Author     : Ivan Zhu <wenhua.ivan@gmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* div#base settings */
+div#base{
+    width: 960px;
+    min-height: 750px;
+    overflow :hidden;
+    margin: 5px auto auto;
+    border: 1px solid blue; 
+}
+
+
+/* div#header settings */
+div#header{
+    height: 100px;
+    border:1px solid red;
+}
+
+
+/* div#left settings */
+div#left{
+    width: 150px;
+    border-right: 1px solid yellow;
+    float: left;
+    min-height:600px; 
+}
+
+/* div#right settings */
+div#right{
+    width: 800px;
+    float: right;
+}
+
+/* div#footer settings */
+div#footer{
+    width: 960px;
+    border-top: 1px solid yellowgreen;
+    height: 50px;
+    float: left;
+}
