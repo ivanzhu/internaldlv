@@ -418,7 +418,7 @@ class CSVController {
 	 */
 	public function renameFileName($dir, $csv, $show, $descs) {
 		//conver filenames encoding from GBK to UTF-8
-		system('conmv -f GBK -t UTF-8 -r --notest ' . $dir . ' > /dev/null');
+		system('convmv -f GBK -t UTF-8 -r --notest ' . $dir . ' > /dev/null');
 		$dir .= '/';
 		if (is_dir($dir)) {
 			if (($dh = opendir($dir))) {
