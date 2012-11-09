@@ -385,14 +385,18 @@ class CSVController {
 			$this->errors[] = 'Get CSV contents error: can not read csv contents';
 			exit();
 		}
+		
+		$csv = trim($csv, "\xFF,\xFE");
 //		if (!$csvNew = iconv($this->encodingFrom, $this->encodingTo, $csv)) {
 		if (!$csvNew = mb_convert_encoding($csv, $this->encodingTo, "$this->encodingFrom")) {
 			$this->errors[] = 'Get csv contents error: can not convert csv encoding';
 			exit();
 		}
 
-		$csvNew = str_replace('﻿', '', $csvNew);
-		echo strlen($csvNew);
+//		$csvNew = str_replace('﻿', '', $csvNew);
+//		echo strlen($csvNew);
+//		$csvNew = trim()
+		
 		if (!file_put_contents($csvFile, $csvNew)) {
 			$this->errors[] = 'Get csv contents error: can not pub csv to file';
 			exit();
