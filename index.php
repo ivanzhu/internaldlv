@@ -19,7 +19,7 @@ $location = isset($_GET['location']) ? $_GET['location'] : 'Main Page';
         <link rel="stylesheet" type="text/css" href="<?php echo _CSS_URL_;?>index.css" />
         <script type="text/javascript" src="<?php echo _JS_URL_;?>jQuery.js"></script>
         <script type="text/javascript" src="<?php echo _JS_URL_;?>index.js"></script>
-        
+
     </head>
     <body>
         <div id="base">
@@ -29,11 +29,14 @@ $location = isset($_GET['location']) ? $_GET['location'] : 'Main Page';
             <div id="left">
                 <ul id="menu">
                     <li class="csv">
-                        <a id="csv" href="<?php echo _BASE_URL_; ?>csv.php?location=csv&action=upload">CSV</a>
+                        <a id="csv" href="<?php echo _BASE_URL_;?>csv.php?location=csv&action=upload">CSV</a>
                     </li>
+					<li class="spider">
+						<a id="spider" href=""></a>
+					</li>
                 </ul>
             </div>
-            
+
             <div id="right">
                 <div id="content">
 

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 //ini_set('post_max_size', '500M');
 //ini_set('upload_max_filesize', '499M');
 
@@ -601,12 +601,8 @@ class CSVController {
 }
 
 $csv = new CSVController('localhost', 'root', 'zhuwenhua', 700, 350);
-//echo $csv->getFileName();
-//echo $csv->uploadFile();
 echo $csv->convert();
-//$csv->csvImageShow('/home/ivan/www/internaldlv/upload/csv/2012/11/05/0055/201211050055/0055');
-//$csv->renameFileName('/home/ivan/www/internaldlv/upload/csv/2012/11/03/0082/201211030082/', '/home/ivan/www/internaldlv/upload/csv/2012/11/03/0082/201211030082/0082.csv', '/home/ivan/www/internaldlv/upload/csv/2012/11/03/0082/201211030082/0082', '/home/ivan/www/internaldlv/upload/csv/2012/11/03/0082/201211030082/0082_desc');
-//$csv->getCsvContent('/home/ivan/www/internaldlv/upload/csv/2012/11/04/0010/201211040010/0010.csv');
+
 
 
 
