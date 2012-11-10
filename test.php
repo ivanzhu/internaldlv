@@ -195,4 +195,9 @@
 //echo '</pre>';
 
 
+//uCode=51375124&mType=mOrderSearch&TimeStamp1=1352373248&TimeStamp2=1352445312&OrderStatus=1
+print_r(getdate());
+echo '<pre>';
+echo strtotime('1352373248');
+echo time();
 
